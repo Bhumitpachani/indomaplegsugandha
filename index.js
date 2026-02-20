@@ -24,8 +24,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: 'panchanibhumit@gmail.com',
-    pass: 'oohhcrbkksrlwnsm'
+    user: 'gagandeep.inspire@gmail.com',
+    pass: 'hinkmclmudvkavuu'
   }
 });
 
@@ -68,7 +68,7 @@ app.post('/api/send-contact', async (req, res) => {
 
     // Build mail options dynamically
     const mailOptions = {
-      from: from || '<panchanibhumit@gmail.com>', // Default sender
+      from: from || '<gagandeep.inspire@gmail.com>', 
       to: Array.isArray(to) ? to.join(', ') : to,
       subject: subject,
       html: html
